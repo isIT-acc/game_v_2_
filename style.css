@@ -178,8 +178,8 @@
 }
 .player__player-ava {
   position: absolute;
-  left: 13px;
-  top: 8px;
+  left: 12px;
+  top: 9px;
   z-index: 99;
 }
 
@@ -198,8 +198,9 @@
   position: absolute;
   top: 28px;
   background-image: url(./imgs/battlefield-head-hp-bg.png);
-  background-position: top -5px right -186px;
+  background-position: top -5px right -243px;
   background-repeat: no-repeat;
+  background-size: 456px 31px;
 }
 .right-player__bg-hp {
   width: 100%;
@@ -217,12 +218,12 @@
   height: 71px;
 } */
 .left-player-hp-line-block {
-  width: 60%;
+  width: 52%;
   /* width: 72%; */
   height: 71px;
 }
 .right-player-hp-line-block {
-  width: 63%;
+  width: 45%;
   height: 71px;
 }
 .player-hp-line-block_positioned {
@@ -233,7 +234,6 @@
 
 .left-player-hp-line-block_positioned {
   position: relative;
-  left: -1px;
 }
 
 .right-player-hp-line-block_positioned {
@@ -257,7 +257,7 @@
   background-color: #8a0000;
 }
 .head-hp-line_width_l {
-  width: 88%;
+  width: 86%;
 }
 .head-hp-line_form_left {
   border-bottom-right-radius: 50px;
@@ -301,7 +301,7 @@
   justify-content: flex-end;
 }
 .flex-container_space-between {
-  width: 100%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
 }
@@ -329,8 +329,9 @@
 
 .lor_positioned {
   position: absolute;
-  top: 11%;
-  left: 17.8%;
+
+  top: 10.8%;
+  left: 17.5%;
 }
 
 .lor_font_default {
@@ -593,6 +594,21 @@
   100% {
     transform: scaleY(0.82) translateY(15%);
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .head-hp-line_width_l {
+    width: 83%;
+  }
+  .head-hp-line__text_positioned_left {
+    left: 10%;
+  }
+  .left-player__player-name {
+    left: 5%;
+  }
+  .right-player__head-hp-line {
+    width: 84%;
   }
 }
 
