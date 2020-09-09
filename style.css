@@ -1,0 +1,635 @@
+.game {
+  margin: 0;
+  padding: 0;
+}
+
+.game_background_black {
+  background-color: black;
+}
+
+.game-field {
+  max-width: 480px;
+  /* min-width: 314px; */
+  height: 679px;
+  position: relative;
+  /* border: 10px solid red; */
+}
+
+.game-field_centered {
+  margin: auto;
+}
+.game-field_font_default {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* .game-field__image {
+  width: 100%;
+  padding-top: 100%;
+  position: absolute;
+} */
+
+.game-field__image_location_cemetry {
+  background-image: url("./imgs/cemetery.jpg");
+  background-position: -96px 0;
+  /* background-position: center 0; */
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+}
+.separator {
+  width: 100%;
+}
+.separator_centered {
+  margin: auto;
+}
+.separator_positioned_top {
+  position: absolute;
+  top: 0%;
+}
+.separator_positioned_bottom {
+  position: absolute;
+  bottom: 0%;
+}
+
+.game-field__battlefield-head-hp-bg {
+  width: 100%;
+}
+.game-field__battlefield-head-hp-bg-centered {
+  margin: auto;
+}
+
+.left-player {
+  width: 71px;
+  /* height: 13%; */
+  /* background-color: red; */
+}
+.player {
+  width: 77px;
+  height: 88px;
+  /* height: 13%; */
+  /* background-color: red; */
+}
+.left-player_positioned {
+  position: relative;
+  /* top: 0; */
+  /* left: 14.8%; */
+}
+.player_positioned {
+  position: relative;
+  /* top: 0; */
+  /* left: 14.8%; */
+}
+.right-player {
+  width: 71px;
+  /* height: 13%; */
+  /* background-color: red; */
+}
+.right-player_positioned {
+  position: relative;
+  /* top: 0; */
+  /* left: 14.8%; */
+}
+.right-player__player-bg {
+  right: -1%;
+  position: absolute;
+  z-index: 100;
+  top: 5%;
+}
+
+.left-player__player-name {
+  position: absolute;
+  white-space: nowrap;
+  left: 1%;
+  top: 10px;
+}
+.right-player__player-name {
+  position: absolute;
+  white-space: nowrap;
+  right: 3.5%;
+  top: 10px;
+}
+
+.head-hp-line__text_positioned_right {
+  right: 4%;
+}
+.head-hp-line__text_positioned_left {
+  /* left: 4%; */
+  left: 2%;
+}
+.left-player__player-bg {
+  /* position: absolute;
+  z-index: 100;
+  top: 6%;
+  left: -1.5%; */
+}
+.player-level {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(187, 182, 182);
+}
+.player-bg {
+  width: 77px;
+  height: 88px;
+  /* padding-top: 37%; */
+  background-image: url("./imgs/battlefield-head-ava-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.left-player__player-bg {
+  position: absolute;
+  z-index: 100;
+  top: 6%;
+  left: -1.5%;
+}
+.player__player-bg {
+  position: absolute;
+  z-index: 100;
+  top: 6%;
+  left: -1.5%;
+}
+
+.player-bg__player-level {
+  position: absolute;
+  top: 79%;
+  left: 46%;
+  z-index: 100;
+}
+
+.player-level {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(187, 182, 182);
+}
+
+.player-ava {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-image: url("./imgs/ava.jpg");
+  background-size: 96%;
+  background-repeat: no-repeat;
+}
+
+.left-player__player-ava {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 99;
+}
+.player__player-ava {
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  z-index: 99;
+}
+
+.left-player__head-hp-line {
+  position: absolute;
+  top: 5px;
+
+  /* background-image: url("./imgs/battlefield-head-hp-bg.png");
+  background-position: -14px -9px;
+  background-repeat: no-repeat; */
+  /* left: 29.5%; */
+}
+.left-player__bg-hp {
+  width: 100%;
+  height: 37.8%;
+  position: absolute;
+  top: 28px;
+  background-image: url(./imgs/battlefield-head-hp-bg.png);
+  background-position: top -5px right -186px;
+  background-repeat: no-repeat;
+}
+.right-player__bg-hp {
+  width: 100%;
+  height: 37.8%;
+  position: absolute;
+  top: 27px;
+  background-image: url(./imgs/battlefield-head-hp-bg.png);
+  background-position: -190px -4px;
+  background-repeat: no-repeat;
+}
+
+/* .player-hp-line-block {
+  width: 56%;
+
+  height: 71px;
+} */
+.left-player-hp-line-block {
+  width: 60%;
+  /* width: 72%; */
+  height: 71px;
+}
+.right-player-hp-line-block {
+  width: 63%;
+  height: 71px;
+}
+.player-hp-line-block_positioned {
+  position: relative;
+
+  /* left: 0px; */
+}
+
+.left-player-hp-line-block_positioned {
+  position: relative;
+  left: -1px;
+}
+
+.right-player-hp-line-block_positioned {
+  position: relative;
+  right: -6px;
+}
+
+.player-name {
+  color: #626262;
+  width: 100%;
+}
+.player-name_font_default {
+  font-size: 14px;
+}
+
+.head-hp-line {
+  height: 51.8%;
+  width: 55%;
+}
+.head-hp-line_color_red {
+  background-color: #8a0000;
+}
+.head-hp-line_width_l {
+  width: 88%;
+}
+.head-hp-line_form_left {
+  border-bottom-right-radius: 50px;
+}
+.head-hp-line_form_right {
+  border-bottom-left-radius: 50px;
+}
+.head-hp-line__text {
+  color: yellow;
+  position: absolute;
+  bottom: -2px;
+}
+
+.head-hp-line__text_font_default {
+  font-size: 14px;
+}
+.head-hp-line__text_positioned_bottom {
+  bottom: -1px;
+}
+
+.right-player__head-hp-line {
+  position: absolute;
+  right: 0%;
+  width: 88%;
+  height: 51.8%;
+  top: 24%;
+}
+.flex-container {
+  display: flex;
+}
+.flex-container_width_half {
+  width: 50%;
+}
+.flex-container_width_full {
+  width: 100%;
+}
+.flex-container_flex-start {
+  justify-content: flex-start;
+}
+.flex-container_flex-end {
+  justify-content: flex-end;
+}
+.flex-container_space-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-container_positioned {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+
+.flex-container_positioned_bottom {
+  position: absolute;
+
+  right: -7px;
+  bottom: 11.4%;
+  z-index: 100;
+}
+
+.lor {
+  width: 67%;
+  height: 5%;
+  color: #aeaeae;
+  text-align: center;
+  letter-spacing: 0.0001em;
+}
+
+.lor_positioned {
+  position: absolute;
+  top: 11%;
+  left: 17.8%;
+}
+
+.lor_font_default {
+  font-size: 14px;
+}
+.container {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* unit */
+.unit {
+  width: 248px;
+  /* height:205px(27.7%) */
+  height: 189.5px;
+}
+
+.unit_positioned_left {
+  position: absolute;
+  top: 30.7%;
+  left: 5px;
+}
+.unit_positioned_right {
+  position: absolute;
+  top: 15%;
+  right: 5.2%;
+}
+
+.unit-image {
+  height: 100%;
+  width: 100%;
+}
+.unit-image_sitting {
+  animation: bg-image-sit steps(2) 300ms;
+}
+
+@keyframes bg-image-sit {
+  from {
+    background-position: 0 60%;
+  }
+  to {
+    background-position: 0 60%;
+  }
+}
+
+.unit-image_attacks {
+  animation: zombie-attacks-frames 600ms steps(2);
+}
+.unit-image__shleves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.unit-image__shleves_play {
+  background: url("./imgs/zombie.png");
+  background-size: 100%;
+  animation: zombie-attacks-shleves 600ms steps(2);
+}
+
+@keyframes zombie-attacks-frames {
+  from {
+    background-position: 0 20%;
+  }
+  to {
+    background-position: 0 60%;
+  }
+}
+
+@keyframes zombie-attacks-shleves {
+  from {
+    background-position: 0 80%;
+  }
+  to {
+    background-position: 0 120%;
+  }
+}
+
+.unit-image_type_thief {
+  background-image: url("./imgs/thief.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.unit-image_type_zombie {
+  background-image: url("./imgs/zombie.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.unit-image_type_red-zombie {
+  background-image: url("./imgs/zombie-rage.png");
+}
+
+.unit__unit-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.unit-current-bg {
+  width: 106px;
+  height: 64px;
+}
+.unit-hp-bar {
+  width: 18.5%;
+  height: 3.2%;
+  border: 1px solid green;
+  background-color: black;
+  z-index: 99;
+}
+.unit-hp-bar_positioned {
+  position: absolute;
+}
+.unit-hp-bar_left {
+  bottom: -1.9%;
+  left: 31%;
+}
+.unit-hp-bar_right {
+  bottom: -1.3%;
+  right: 30%;
+}
+.unit-hp-bar__filling {
+  width: 97%;
+  height: 67%;
+  background-color: #0d8900;
+  border: 1px solid black;
+}
+.unit-hp-bar__filling_positioned {
+  position: absolute;
+  top: 0%;
+  left: -1%;
+}
+
+.unit-bg {
+  /* width 106px, width of container: 248px; */
+  width: 42.7%;
+  height: 31.2%;
+  background-image: url("./imgs/unit-current-bg.png");
+  background-size: 100%;
+}
+.unit-bg_red {
+  background-position: 0 100%;
+}
+.unit-bg_yellow {
+  background-position: 0 200%;
+}
+.unit__unit-bg {
+  position: absolute;
+}
+.unit__unit-bg_right {
+  bottom: -4.4%;
+  right: 19.8%;
+}
+.unit__unit-bg_left {
+  bottom: -7.8%;
+  left: 19%;
+}
+
+/* unit */
+
+/* attack button */
+.attack-button {
+  width: 122px;
+  height: 131px;
+  /* width: 17.9%;
+  height: 17.7%; */
+  background-image: url("./imgs/atack-button-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.attack-button_positioned {
+  position: relative;
+  /* z-index: 100;
+  bottom: 18.3%;
+  right: 14.5%;
+  bottom: 0.3%;
+  right: 0.5%; */
+}
+
+.attack-button_pressed {
+  background-position: 0 99%;
+}
+
+.attack-button__hp-number {
+  color: white;
+}
+.attack-button__hp-number_pressed {
+  color: #aeaeae;
+}
+.attack-button__hp-number_positioned {
+  position: absolute;
+  left: 47%;
+  bottom: 40%;
+}
+.attack-button__hp-number_font_default {
+  font-size: 15px;
+}
+/* attack button */
+/* skills button */
+.skills-button {
+  width: 68px;
+  height: 68px;
+  /* width: 10%;
+  height: 9.2%; */
+  background-image: url("./imgs/skills.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 30.3%;
+}
+.skills-button_positioned {
+  position: relative;
+  bottom: -59px;
+  right: -9px;
+}
+.skills-button_activated {
+  background-position: 0 33.3%;
+}
+/* skills button */
+
+.red-cloud {
+  position: absolute;
+  width: 100%;
+  height: 143%;
+  background-image: url("./imgs/effect-rage.png");
+  background-repeat: no-repeat;
+  background-size: 77%;
+  background-position: 50% 50%;
+  transform: scaleY(0.41) translateY(91%);
+  opacity: 0;
+}
+
+.unit-image__red-cloud {
+  bottom: -0.5%;
+  left: 11%;
+}
+
+.red-cloud_animation-played {
+  animation: red-cloud-scales 1s;
+}
+
+.units-and-btns-container {
+  top: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@keyframes red-cloud-scales {
+  0% {
+    opacity: 1;
+  }
+  /* 70% {
+    transform: scaleY(0.82) translateY(15%);
+    opacity: 1;
+  } */
+  100% {
+    transform: scaleY(0.82) translateY(15%);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game-field {
+    min-width: 314px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .game-field {
+    min-width: 314px;
+  }
+}
+
+@media screen and (max-height: 679px) {
+  .container {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-height: 607px) {
+  .units-and-btns-container {
+    height: 100vh;
+  }
+
+  .flex-container_positioned_bottom {
+    bottom: 1.4%;
+  }
+
+  .unit_positioned_left {
+    top: 35.7%;
+  }
+  .unit_positioned_left {
+    top: 34%;
+  }
+  .unit_positioned_right {
+    top: 16.7%;
+  }
+}
