@@ -217,7 +217,7 @@
   height: 71px;
 } */
 .left-player-hp-line-block {
-  width: 60%;
+  width: 58%;
   /* width: 72%; */
   height: 71px;
 }
@@ -233,7 +233,7 @@
 
 .left-player-hp-line-block_positioned {
   position: relative;
-  left: -1px;
+  left: -3%;
 }
 
 .right-player-hp-line-block_positioned {
