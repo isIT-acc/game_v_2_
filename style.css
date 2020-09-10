@@ -108,12 +108,17 @@
 }
 
 .head-hp-line__text_positioned_right {
+  position: absolute;
   right: 4%;
+  z-index: 100;
 }
 .head-hp-line__text_positioned_left {
-  /* left: 4%; */
+  position: absolute;
   left: 2%;
+  bottom: -2px;
+  z-index: 100;
 }
+
 .left-player__player-bg {
   /* position: absolute;
   z-index: 100;
@@ -178,15 +183,16 @@
 }
 .player__player-ava {
   position: absolute;
-  left: 13px;
+  left: 10px;
   top: 8px;
   z-index: 99;
 }
 
 .left-player__head-hp-line {
   position: absolute;
-  top: 5px;
-
+  top: 6px;
+  /* width: calc(100% - 20px); */
+  width: calc(100% - 30px);
   /* background-image: url("./imgs/battlefield-head-hp-bg.png");
   background-position: -14px -9px;
   background-repeat: no-repeat; */
@@ -196,10 +202,11 @@
   width: 100%;
   height: 37.8%;
   position: absolute;
-  top: 28px;
+  top: 27px;
   background-image: url(./imgs/battlefield-head-hp-bg.png);
-  background-position: top -5px right -186px;
+  background-position: top -4px right -200px;
   background-repeat: no-repeat;
+  background-size: 377px 31px;
 }
 .right-player__bg-hp {
   width: 100%;
@@ -217,12 +224,12 @@
   height: 71px;
 } */
 .left-player-hp-line-block {
-  width: 58%;
+  width: calc(100% - 72px);
   /* width: 72%; */
   height: 71px;
 }
 .right-player-hp-line-block {
-  width: 63%;
+  width: calc(100% - 72px);
   height: 71px;
 }
 .player-hp-line-block_positioned {
@@ -233,12 +240,13 @@
 
 .left-player-hp-line-block_positioned {
   position: relative;
-  left: -3%;
+  /* left: -3%; */
+  left: -5px;
 }
 
 .right-player-hp-line-block_positioned {
   position: relative;
-  right: -6px;
+  right: -5px;
 }
 
 .player-name {
@@ -251,7 +259,6 @@
 
 .head-hp-line {
   height: 51.8%;
-  width: 55%;
 }
 .head-hp-line_color_red {
   background-color: #8a0000;
@@ -260,15 +267,31 @@
   width: 88%;
 }
 .head-hp-line_form_left {
-  border-bottom-right-radius: 50px;
+  /* border-bottom-right-radius: 50px; */
+}
+.head-hp-line_form_right-angle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  right: -7px;
+  background-color: #8a0000;
+  transform: skewX(-39deg);
+  z-index: 99;
+}
+.head-hp-line_form_left-angle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -7px;
+  background-color: #8a0000;
+  transform: skewX(39deg);
+  z-index: 99;
 }
 .head-hp-line_form_right {
   border-bottom-left-radius: 50px;
 }
 .head-hp-line__text {
   color: yellow;
-  position: absolute;
-  bottom: -2px;
 }
 
 .head-hp-line__text_font_default {
@@ -281,7 +304,7 @@
 .right-player__head-hp-line {
   position: absolute;
   right: 0%;
-  width: 88%;
+  width: calc(100% - 28px);
   height: 51.8%;
   top: 24%;
 }
@@ -293,6 +316,12 @@
 }
 .flex-container_width_full {
   width: 100%;
+}
+.flex-container_width_for-left-player {
+  width: 51.5%;
+}
+.flex-container_width_for-right-player {
+  width: 48.5%;
 }
 .flex-container_flex-start {
   justify-content: flex-start;
@@ -317,6 +346,11 @@
   right: -7px;
   bottom: 11.4%;
   z-index: 100;
+}
+
+.flex-container_positioned_right {
+  position: relative;
+  right: -5px;
 }
 
 .lor {
